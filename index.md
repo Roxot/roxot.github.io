@@ -10,6 +10,7 @@ You can find my CV [here](/assets/files/CV.pdf).
 
 ### News
 * We released a [pre-print](https://arxiv.org/abs/2005.10283) of our new work investigating the appropriateness of MAP decoding in NMT.
+* We released a new [PyTorch codebase](https://github.com/Roxot/AEVNMT.pt) for developing deep generative models for machine translation.
 * Auto-Encoding Variational Neural Machine Translation was accepted as a long paper at RepL4NLP.
 * We developed a [notebook](https://github.com/probabll/dgm4nlp/blob/solutions/notebooks/sentencevae/SentVAE_Solutions.ipynb) describing and implementing a sentence VAE ([Bowman et. al, 2016](https://arxiv.org/abs/1511.06349)) in PyTorch.
 * The European [GoURMET](http://gourmet-project.eu/) project, and with that my PhD, started!

@@ -7,6 +7,7 @@
   authors: "Bryan Eikema and Wilker Aziz"
   doc-url: //arxiv.org/pdf/2005.10283.pdf
   arxiv: //arxiv.org/abs/2005.10283
+  booktitle: "arXiv"
 -
   layout: paper
   paper-type: inproceedings
