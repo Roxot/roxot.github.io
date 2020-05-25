@@ -1,5 +1,14 @@
 -
   layout: paper
+  paper-type: pre-print
+  selected: y
+  year: 2020
+  title: "Is MAP Decoding All You Need? The Inadequacy of the Mode in Neural Machine Translation"
+  authors: "Bryan Eikema and Wilker Aziz"
+  doc-url: //arxiv.org/pdf/2005.10283.pdf
+  arxiv: //arxiv.org/abs/2005.10283
+-
+  layout: paper
   paper-type: inproceedings
   selected: y
   year: 2019
