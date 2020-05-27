@@ -5,7 +5,7 @@ title: Teaching
 ---
 
 **VI Tutorial University of Alicante**<br/>
-_Alicante, Spain, January 2020_
+_Alicante, Spain, January 2020_<br/>
 I helped give the [VI Tutorial](https://vitutorial.github.io/tour/ua2020) at the University of Alicante, Spain. The VI tutorial is an intense 3-day tutorial teaching deep generative models, variational inference through reparameterization (continuous latent variables), REINFORCE with variance reduction techniques (discrete random variables) and discrete relaxations through the Gumbel softmax.
 
 **Deep Learning for Natural Language Processing**<br/>
