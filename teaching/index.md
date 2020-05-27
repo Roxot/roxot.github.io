@@ -4,6 +4,10 @@ author_profile: true
 title: Teaching
 ---
 
+**VI Tutorial University of Alicante**<br/>
+_Alicante, Spain, January 2020_
+I helped give the [VI Tutorial](https://vitutorial.github.io/tour/ua2020) at the University of Alicante, Spain. The VI tutorial is an intense 3-day tutorial teaching deep generative models, variational inference through reparameterization (continuous latent variables), REINFORCE with variance reduction techniques (discrete random variables) and discrete relaxations through the Gumbel softmax.
+
 **Deep Learning for Natural Language Processing**<br/>
 _Master AI, Fall 2019, Teaching Assistant_<br/>
 This course teaches the essential architectures and parameter estimation procedures used in modern natural language processing. It spans NLP tasks from learning lexical representations, to part-of-speech tagging, to machine translation. Additionally, the students are introduced to Bayesian concepts for NLP, covering Bayesian neural networks and variational inference, Bayesian dropout, and variational auto-encoders for text.
