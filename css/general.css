@@ -1,0 +1,27 @@
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.sidebar-about .custom-title {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.sidebar-about .custom-descr {
+    /* font-size: 90%; */
+    /* text-align: justify; */
+    hyphens: auto;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 58em) {
+.sidebar-about .custom-descr {
+        font-size: 90%;
+    }
+}
+
+.social-icons .custom {
+    width: 20px;
+    margin-right: 5px;
+}
