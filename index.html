@@ -274,10 +274,163 @@
 <li>Information Theory</li>
 </ul>
 <h3 id="resume">Resume</h3>
-<p>You can find my CV <a href="/files/CV.pdf">here</a>.</p>
+<p>You can find my (slightly outdated) CV <a href="/files/CV.pdf">here</a>.</p>
 
 
 <h3>Selected Publications</h3>
+
+    
+        <div style="margin-bottom: 0.5cm;">
+
+    <b>Sampling from Discrete Energy-Based Models with Quality/Efficiency Trade-offs</b><br/>
+    Bryan Eikema, Germán Kruszewski, Hady Elsahar, Marc Dymetman in <em>arXiv</em>, 2021
+    
+    <br/>
+
+    <div style="margin-top: 3px; margin-bottom: 10px;">
+    
+    <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
+    
+    <form action="//arxiv.org/pdf/2112.05702.pdf" target="blank" style="display: inline;">
+            <button type="submit" class="pub-btn">pdf</button>
+    </form>
+    
+    
+    <button type="button" class="pub-btn open-modal open-cite">cite</button>
+    <br />
+    
+    </div>
+
+
+    
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title"><b>Sampling from Discrete Energy-Based Models with Quality/Efficiency Trade-offs</b></span>
+                <span class="close-modal"><b>&times;</b></span>
+            </div>
+            <div class="modal-body">
+                <p class="abstract-content" lang="en">Energy-Based Models (EBMs) allow for extremely flexible specifications of probability distributions. However, they do not provide a mechanism for obtaining exact samples from these distributions. Monte Carlo techniques can aid us in obtaining samples if some proposal distribution that we can easily sample from is available. For instance, rejection sampling can provide exact samples but is often difficult or impossible to apply due to the need to find a proposal distribution that upper-bounds the target distribution everywhere. Approximate Markov chain Monte Carlo sampling techniques like Metropolis-Hastings are usually easier to design, exploiting a local proposal distribution that performs local edits on an evolving sample. However, these techniques can be inefficient due to the local nature of the proposal distribution and do not provide an estimate of the quality of their samples. In this work, we propose a new approximate sampling technique, Quasi Rejection Sampling (QRS), that allows for a trade-off between sampling efficiency and sampling quality, while providing explicit convergence bounds and diagnostics. QRS capitalizes on the availability of high-quality global proposal distributions obtained from deep learning models. We demonstrate the effectiveness of QRS sampling for discrete EBMs over text for the tasks of controlled text generation with distributional constraints and paraphrase generation. We show that we can sample from such EBMs with arbitrary precision at the cost of sampling efficiency.
+</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+            <b>Cite</b><b class="close-modal">&times;</b>
+            </div>
+            <div class="modal-body">
+                <pre class="bibtex-content">@article{eikema-et-al-2021-sampling,
+  author    = {Bryan Eikema and
+               Germ{\&#39;{a}}n Kruszewski and
+               Hady Elsahar and
+               Marc Dymetman},
+  title     = {Sampling from Discrete Energy-Based Models with Quality/Efficiency
+               Trade-offs},
+  journal   = {CoRR},
+  volume    = {abs/2112.05702},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2112.05702},
+  eprinttype = {arXiv},
+  eprint    = {2112.05702}
+}
+</pre>
+            </div>
+            <div class="modal-footer">
+                <span class="download-btn">
+                    <a class="copy-btn"><i class="fa fa-copy"></i> Copy</a>
+                </span>
+                <span class="download-btn">
+                    <a href="/files/bibtex/sampling-with-diagnostics.bib" download><i class="fa fa-download"></i> Download</a>
+                </span>
+                <i class="status-text"></i>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+    
+
+    
+        <div style="margin-bottom: 0.5cm;">
+
+    <b>Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation</b><br/>
+    Bryan Eikema and Wilker Aziz in <em>arXiv</em>, 2021
+    
+    <br/>
+
+    <div style="margin-top: 3px; margin-bottom: 10px;">
+    
+    <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
+    
+    <form action="//arxiv.org/pdf/2108.04718.pdf" target="blank" style="display: inline;">
+            <button type="submit" class="pub-btn">pdf</button>
+    </form>
+    
+    
+    <button type="button" class="pub-btn open-modal open-cite">cite</button>
+    <br />
+    
+    </div>
+
+
+    
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title"><b>Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation</b></span>
+                <span class="close-modal"><b>&times;</b></span>
+            </div>
+            <div class="modal-body">
+                <p class="abstract-content" lang="en">In neural machine translation (NMT), we search for the mode of the model distribution to form predictions. The mode as well as other high probability translations found by beam search have been shown to often be inadequate in a number of ways. This prevents practitioners from improving translation quality through better search, as these idiosyncratic translations end up being selected by the decoding algorithm, a problem known as the beam search curse. Recently, a sampling-based approximation to minimum Bayes risk (MBR) decoding has been proposed as an alternative decision rule for NMT that would likely not suffer from the same problems. We analyse this approximation and establish that it has no equivalent to the beam search curse, i.e. better search always leads to better translations. We also design different approximations aimed at decoupling the cost of exploration from the cost of robust estimation of expected utility. This allows for exploration of much larger hypothesis spaces, which we show to be beneficial. We also show that it can be beneficial to make use of strategies like beam search and nucleus sampling to construct hypothesis spaces efficiently. We show on three language pairs (English into and from German, Romanian, and Nepali) that MBR can improve upon beam search with moderate computation.
+</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+            <b>Cite</b><b class="close-modal">&times;</b>
+            </div>
+            <div class="modal-body">
+                <pre class="bibtex-content">@article{eikema-aziz-2021-sampling,
+  author    = {Bryan Eikema and
+               Wilker Aziz},
+  title     = {Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation},
+  journal   = {CoRR},
+  volume    = {abs/2108.04718},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2108.04718},
+  eprinttype = {arXiv},
+  eprint    = {2108.04718}
+}
+</pre>
+            </div>
+            <div class="modal-footer">
+                <span class="download-btn">
+                    <a class="copy-btn"><i class="fa fa-copy"></i> Copy</a>
+                </span>
+                <span class="download-btn">
+                    <a href="/files/bibtex/sampling-based-mbr.bib" download><i class="fa fa-download"></i> Download</a>
+                </span>
+                <i class="status-text"></i>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+    
 
     
         <div style="margin-bottom: 0.5cm;">
@@ -354,86 +507,6 @@
 </div>
 
     
-
-    
-        <div style="margin-bottom: 0.5cm;">
-
-    <b>Auto-Encoding Variational Neural Machine Translation</b><br/>
-    Bryan Eikema and Wilker Aziz in <em>Proceedings of the 4th Workshop on Representation Learning for NLP (RepL4NLP)</em>, 2019
-    
-    <br/>
-
-    <div style="margin-top: 3px; margin-bottom: 10px;">
-    
-    <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
-    
-    <form action="//aclweb.org/anthology/W19-4315.pdf" target="blank" style="display: inline;">
-            <button type="submit" class="pub-btn">pdf</button>
-    </form>
-    
-    <form action="//github.com/Roxot/AEVNMT" target="blank" style="display: inline;">
-            <button class="pub-btn" type="submit">code</button>
-    </form>
-    
-    
-    <button type="button" class="pub-btn open-modal open-cite">cite</button>
-    <br />
-    
-    </div>
-
-
-    
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="modal-title"><b>Auto-Encoding Variational Neural Machine Translation</b></span>
-                <span class="close-modal"><b>&times;</b></span>
-            </div>
-            <div class="modal-body">
-                <p class="abstract-content" lang="en">We present a deep generative model of bilingual sentence pairs for machine translation. The model generates source and target sentences jointly from a shared latent representation and is parameterised by neural networks. We perform efficient training using amortised variational inference and reparameterised gradients. Additionally, we discuss the statistical implications of joint modelling and propose an efficient approximation to maximum a posteriori decoding for fast test-time predictions. We demonstrate the effectiveness of our model in three machine translation scenarios: in-domain training, mixed-domain training, and learning from a mix of gold-standard and synthetic data. Our experiments show consistently that our joint formulation outperforms conditional modelling (i.e. standard neural machine translation) in all such scenarios.
-</p>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-            <b>Cite</b><b class="close-modal">&times;</b>
-            </div>
-            <div class="modal-body">
-                <pre class="bibtex-content">@inproceedings{eikema-aziz-2019-auto,
-    title = &#34;Auto-Encoding Variational Neural Machine Translation&#34;,
-    author = &#34;Eikema, Bryan  and
-      Aziz, Wilker&#34;,
-    booktitle = &#34;Proceedings of the 4th Workshop on Representation Learning for NLP (RepL4NLP-2019)&#34;,
-    month = aug,
-    year = &#34;2019&#34;,
-    address = &#34;Florence, Italy&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://www.aclweb.org/anthology/W19-4315&#34;,
-    doi = &#34;10.18653/v1/W19-4315&#34;,
-    pages = &#34;124--141&#34;,
-    abstract = &#34;We present a deep generative model of bilingual sentence pairs for machine translation. The model generates source and target sentences jointly from a shared latent representation and is parameterised by neural networks. We perform efficient training using amortised variational inference and reparameterised gradients. Additionally, we discuss the statistical implications of joint modelling and propose an efficient approximation to maximum a posteriori decoding for fast test-time predictions. We demonstrate the effectiveness of our model in three machine translation scenarios: in-domain training, mixed-domain training, and learning from a mix of gold-standard and synthetic data. Our experiments show consistently that our joint formulation outperforms conditional modelling (i.e. standard neural machine translation) in all such scenarios.&#34;,
-}
-</pre>
-            </div>
-            <div class="modal-footer">
-                <span class="download-btn">
-                    <a class="copy-btn"><i class="fa fa-copy"></i> Copy</a>
-                </span>
-                <span class="download-btn">
-                    <a href="/files/bibtex/aevnmt.bib" download><i class="fa fa-download"></i> Download</a>
-                </span>
-                <i class="status-text"></i>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
 
     
 
@@ -544,7 +617,7 @@
   <footer>
   <div>
     <p>
-      &copy; Bryan Eikema 2020
+      &copy; Bryan Eikema 2022
 
       
 
