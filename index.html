@@ -7,21 +7,21 @@
 
   <title>Bryan Eikema</title>
 
-  <meta name="description" content="PhD Candidate" />
+  <meta name="description" content="PhD Student" />
 
   
 
 <meta itemprop="name" content="About">
-<meta itemprop="description" content="PhD Candidate">
+<meta itemprop="description" content="PhD Student">
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content="PhD Candidate"/>
+<meta name="twitter:description" content="PhD Student"/>
 
 
 <meta property="og:title" content="About" />
-<meta property="og:description" content="PhD Candidate" />
+<meta property="og:description" content="PhD Student" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://roxot.github.io/" />
 <meta property="og:updated_time" content="2020-10-25T18:18:57+01:00" />
@@ -42,14 +42,14 @@
         "url": "https://roxot.github.io/images/bio-photo.jpg"
         
       },
-      "description": "PhD Candidate"
+      "description": "PhD Student"
     },
     {
       "@type": "WebSite",
       "@id": "https://roxot.github.io/#website",
       "url": "https://roxot.github.io/",
       "name": "Bryan Eikema",
-      "description": "PhD Candidate",
+      "description": "PhD Student",
       "publisher": {
         "@id": "https://roxot.github.io/#author"
       },
@@ -68,7 +68,7 @@
       },
       "datePublished": "2020-10-25T18:18:57+01:00",
       "dateModified": "2020-10-25T18:18:57+01:00",
-      "description": "PhD Candidate",
+      "description": "PhD Student",
       "inLanguage": "en-us",
       "potentialAction": [
         {
@@ -219,7 +219,7 @@
 
       
       
-      <p>PhD Candidate</br>University of Amsterdam</p>
+      <p>PhD Student</br>University of Amsterdam</p>
       
 
     </div>
@@ -265,16 +265,16 @@
   <main class="content container">
   <h1>About</h1>
 
-<p>I am a PhD student at the <a href="https://www.illc.uva.nl/">Institute for Logic, Language, and Computation</a> at the University of Amsterdam. My interests lie at the intersection of natural language processing and probabilistic modelling. In particular I work on inducing latent structure in parallel data and improving neural machine translation through better probabilistic modelling. My research is part of the European <a href="http://gourmet-project.eu/">GoURMET</a> project. My thesis adviser is <a href="http://wilkeraziz.github.io/">dr. Wilker Ferreira Aziz</a>.</p>
+<p>I am a PhD student at the <a href="https://www.illc.uva.nl/">Institute for Logic, Language, and Computation</a> at the University of Amsterdam. My interests lie at the intersection of natural language processing and probabilistic modelling. My research is part of the European <a href="http://gourmet-project.eu/">GoURMET</a> project. My thesis adviser is <a href="http://wilkeraziz.github.io/">dr. Wilker Ferreira Aziz</a>.</p>
 <h3 id="current-interests">Current Interests</h3>
 <ul>
-<li>Probabilistic Neural Machine Translation</li>
-<li>Deep Generative Models</li>
+<li>Probabilistic Modelling</li>
+<li>Minimum Bayes Risk Decoding</li>
+<li>Machine Translation</li>
 <li>Bayesian Data Analysis</li>
-<li>Information Theory</li>
 </ul>
-<h3 id="resume">Resume</h3>
-<p>You can find my (slightly outdated) CV <a href="/files/CV.pdf">here</a>.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
 <h3>Selected Publications</h3>
@@ -282,8 +282,8 @@
     
         <div style="margin-bottom: 0.5cm;">
 
-    <b>Sampling from Discrete Energy-Based Models with Quality/Efficiency Trade-offs</b><br/>
-    Bryan Eikema, Germán Kruszewski, Hady Elsahar, Marc Dymetman in <em>arXiv</em>, 2021
+    <b>An Approximate Sampler for Energy-based Models with Divergence Diagnostics</b><br/>
+    Bryan Eikema, Germán Kruszewski, Cristopher R Dance, Hady Elsahar, Marc Dymetman in <em>Transactions on Machine Learning Research</em>, 2022
     
     <br/>
 
@@ -291,7 +291,10 @@
     
     <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
     
-    <form action="//arxiv.org/pdf/2112.05702.pdf" target="blank" style="display: inline;">
+    <form action="https://openreview.net/pdf" target="blank" style="display: inline;">
+            
+                <input type="hidden" name="id" value="VW4IrC0n0M" />
+            
             <button type="submit" class="pub-btn">pdf</button>
     </form>
     
@@ -306,11 +309,11 @@
     <div class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title"><b>Sampling from Discrete Energy-Based Models with Quality/Efficiency Trade-offs</b></span>
+                <span class="modal-title"><b>An Approximate Sampler for Energy-based Models with Divergence Diagnostics</b></span>
                 <span class="close-modal"><b>&times;</b></span>
             </div>
             <div class="modal-body">
-                <p class="abstract-content" lang="en">Energy-Based Models (EBMs) allow for extremely flexible specifications of probability distributions. However, they do not provide a mechanism for obtaining exact samples from these distributions. Monte Carlo techniques can aid us in obtaining samples if some proposal distribution that we can easily sample from is available. For instance, rejection sampling can provide exact samples but is often difficult or impossible to apply due to the need to find a proposal distribution that upper-bounds the target distribution everywhere. Approximate Markov chain Monte Carlo sampling techniques like Metropolis-Hastings are usually easier to design, exploiting a local proposal distribution that performs local edits on an evolving sample. However, these techniques can be inefficient due to the local nature of the proposal distribution and do not provide an estimate of the quality of their samples. In this work, we propose a new approximate sampling technique, Quasi Rejection Sampling (QRS), that allows for a trade-off between sampling efficiency and sampling quality, while providing explicit convergence bounds and diagnostics. QRS capitalizes on the availability of high-quality global proposal distributions obtained from deep learning models. We demonstrate the effectiveness of QRS sampling for discrete EBMs over text for the tasks of controlled text generation with distributional constraints and paraphrase generation. We show that we can sample from such EBMs with arbitrary precision at the cost of sampling efficiency.
+                <p class="abstract-content" lang="en">Energy-based models (EBMs) allow flexible specifications of probability distributions. However, sampling from EBMs is non-trivial, usually requiring approximate techniques such as Markov chain Monte Carlo (MCMC). A major downside of MCMC sampling is that it is often impossible to compute the divergence of the sampling distribution from the target distribution: therefore, the quality of the samples cannot be guaranteed. Here, we introduce quasi-rejection sampling (QRS), a simple extension of rejection sampling that performs approximate sampling, but, crucially, does provide divergence diagnostics (in terms of f-divergences, such as KL divergence and total variation distance). We apply QRS to sampling from discrete EBMs over text for controlled generation. We show that we can sample from such EBMs with arbitrary precision in exchange for sampling efficiency and quantify the trade-off between the two by means of the aforementioned diagnostics.
 </p>
             </div>
         </div>
@@ -324,19 +327,13 @@
             <b>Cite</b><b class="close-modal">&times;</b>
             </div>
             <div class="modal-body">
-                <pre class="bibtex-content">@article{eikema-et-al-2021-sampling,
-  author    = {Bryan Eikema and
-               Germ{\&#39;{a}}n Kruszewski and
-               Hady Elsahar and
-               Marc Dymetman},
-  title     = {Sampling from Discrete Energy-Based Models with Quality/Efficiency
-               Trade-offs},
-  journal   = {CoRR},
-  volume    = {abs/2112.05702},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2112.05702},
-  eprinttype = {arXiv},
-  eprint    = {2112.05702}
+                <pre class="bibtex-content">@article{eikema-et-al-2022-qrs,
+title={},
+author={},
+journal={Transactions of Machine Learning Research},
+year={2022},
+url={https://openreview.net/forum?id=VW4IrC0n0M},
+note={}
 }
 </pre>
             </div>
@@ -360,8 +357,8 @@
     
         <div style="margin-bottom: 0.5cm;">
 
-    <b>Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation</b><br/>
-    Bryan Eikema and Wilker Aziz in <em>arXiv</em>, 2021
+    <b>Sampling-Based Approximations to Minimum Bayes Risk Decoding for Neural Machine Translation</b><br/>
+    Bryan Eikema and Wilker Aziz in <em>Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing</em>, 2022
     
     <br/>
 
@@ -370,6 +367,7 @@
     <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
     
     <form action="//arxiv.org/pdf/2108.04718.pdf" target="blank" style="display: inline;">
+            
             <button type="submit" class="pub-btn">pdf</button>
     </form>
     
@@ -384,11 +382,11 @@
     <div class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title"><b>Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation</b></span>
+                <span class="modal-title"><b>Sampling-Based Approximations to Minimum Bayes Risk Decoding for Neural Machine Translation</b></span>
                 <span class="close-modal"><b>&times;</b></span>
             </div>
             <div class="modal-body">
-                <p class="abstract-content" lang="en">In neural machine translation (NMT), we search for the mode of the model distribution to form predictions. The mode as well as other high probability translations found by beam search have been shown to often be inadequate in a number of ways. This prevents practitioners from improving translation quality through better search, as these idiosyncratic translations end up being selected by the decoding algorithm, a problem known as the beam search curse. Recently, a sampling-based approximation to minimum Bayes risk (MBR) decoding has been proposed as an alternative decision rule for NMT that would likely not suffer from the same problems. We analyse this approximation and establish that it has no equivalent to the beam search curse, i.e. better search always leads to better translations. We also design different approximations aimed at decoupling the cost of exploration from the cost of robust estimation of expected utility. This allows for exploration of much larger hypothesis spaces, which we show to be beneficial. We also show that it can be beneficial to make use of strategies like beam search and nucleus sampling to construct hypothesis spaces efficiently. We show on three language pairs (English into and from German, Romanian, and Nepali) that MBR can improve upon beam search with moderate computation.
+                <p class="abstract-content" lang="en">In NMT we search for the mode of the model distribution to form predictions. The mode and other high-probability translations found by beam search have been shown to often be inadequate in a number of ways. This prevents improving translation quality through better search, as these idiosyncratic translations end up selected by the decoding algorithm, a problem known as the beam search curse. Recently, an approximation to minimum Bayes risk (MBR) decoding has been proposed as an alternative decision rule that would likely not suffer from the same problems. We analyse this approximation and establish that it has no equivalent to the beam search curse. We then design approximations that decouple the cost of exploration from the cost of robust estimation of expected utility. This allows for much larger hypothesis spaces, which we show to be beneficial. We also show that mode-seeking strategies can aid in constructing compact sets of promising hypotheses and that MBR is effective in identifying good translations in them. We conduct experiments on three language pairs varying in amounts of resources available: English into and from German, Romanian, and Nepali.
 </p>
             </div>
         </div>
@@ -402,16 +400,15 @@
             <b>Cite</b><b class="close-modal">&times;</b>
             </div>
             <div class="modal-body">
-                <pre class="bibtex-content">@article{eikema-aziz-2021-sampling,
-  author    = {Bryan Eikema and
+                <pre class="bibtex-content">@inproceedings{eikema-aziz-2022-sampling,
+    author = {Bryan Eikema and
                Wilker Aziz},
-  title     = {Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation},
-  journal   = {CoRR},
-  volume    = {abs/2108.04718},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2108.04718},
-  eprinttype = {arXiv},
-  eprint    = {2108.04718}
+    title = {Sampling-Based Approximations to Minimum Bayes Risk Decoding for Neural Machine Translation},
+    booktitle = &#34;Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing&#34;,
+    month = dec,
+    year = &#34;2022&#34;,
+    address = &#34;Online and Abu Dhabi, United Arab Emirates&#34;,
+    publisher = &#34;Association for Computational Linguistics&#34;,
 }
 </pre>
             </div>
@@ -447,6 +444,7 @@
     <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
     
     <form action="//aclweb.org/anthology/2020.coling-main.398.pdf" target="blank" style="display: inline;">
+            
             <button type="submit" class="pub-btn">pdf</button>
     </form>
     
@@ -505,8 +503,6 @@
     
 
 </div>
-
-    
 
     
 
@@ -602,7 +598,11 @@
 <h3>Talks</h3>
 <ul>
 
-    <li>Unbabel, ILLC CLS: <a href="/files/talks/inadequacy-mode.pdf">The Inadequacy of the Mode in Neural Machine Translation</a></li>
+    <li>Cambridge NLP 2022: <a href="/files/talks/cambridge-nlp.pdf">Decoding is deciding under uncertainty</a></li>
+
+    <li>AI Seminar Series KU 2022: <a href="/files/talks/ai-seminar-series-copenhagen.pdf">A Distribution-Aware Decision Rule for NMT</a></li>
+
+    <li>Unbabel, ILLC CLS 2021: <a href="/files/talks/inadequacy-mode.pdf">The Inadequacy of the Mode in NMT</a></li>
 
     <li>COLING 2020: <a href="/files/talks/coling2020-inadequacy-mode.pdf">Is MAP Decoding All You Need? The Inadequacy of the Mode in Neural Machine Translation</a></li>
 
@@ -610,7 +610,9 @@
 
 <h3>Projects</h3>
 
-    <a href="//github.com/Roxot/AEVNMT.pt">AEVNMT.pt</a>: A PyTorch-based framework for creating deep generative models of text.</br>
+    <a href="//github.com/Roxot/mbr-nmt">mbr-nmt</a>: Sampling-based Minimum Bayes Risk decoding in Python.</br>
+
+    <a href="//github.com/Roxot/AEVNMT.pt">AEVNMT.pt</a>: A PyTorch-based framework for deep generative models of text.</br>
 
   </main>
 

@@ -50,14 +50,14 @@
         "url": "https://roxot.github.io/images/bio-photo.jpg"
         
       },
-      "description": "PhD Candidate"
+      "description": "PhD Student"
     },
     {
       "@type": "WebSite",
       "@id": "https://roxot.github.io/#website",
       "url": "https://roxot.github.io/",
       "name": "Bryan Eikema",
-      "description": "PhD Candidate",
+      "description": "PhD Student",
       "publisher": {
         "@id": "https://roxot.github.io/#author"
       },
@@ -259,7 +259,7 @@
 
       
       
-      <p>PhD Candidate</br>University of Amsterdam</p>
+      <p>PhD Student</br>University of Amsterdam</p>
       
 
     </div>
@@ -310,8 +310,8 @@
 
     <div style="margin-bottom: 0.5cm;">
 
-    <b>Sampling from Discrete Energy-Based Models with Quality/Efficiency Trade-offs</b><br/>
-    Bryan Eikema, Germán Kruszewski, Hady Elsahar, Marc Dymetman in <em>arXiv</em>, 2021
+    <b>An Approximate Sampler for Energy-based Models with Divergence Diagnostics</b><br/>
+    Bryan Eikema, Germán Kruszewski, Cristopher R Dance, Hady Elsahar, Marc Dymetman in <em>Transactions on Machine Learning Research</em>, 2022
     
     <br/>
 
@@ -319,7 +319,10 @@
     
     <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
     
-    <form action="//arxiv.org/pdf/2112.05702.pdf" target="blank" style="display: inline;">
+    <form action="https://openreview.net/pdf" target="blank" style="display: inline;">
+            
+                <input type="hidden" name="id" value="VW4IrC0n0M" />
+            
             <button type="submit" class="pub-btn">pdf</button>
     </form>
     
@@ -334,11 +337,11 @@
     <div class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title"><b>Sampling from Discrete Energy-Based Models with Quality/Efficiency Trade-offs</b></span>
+                <span class="modal-title"><b>An Approximate Sampler for Energy-based Models with Divergence Diagnostics</b></span>
                 <span class="close-modal"><b>&times;</b></span>
             </div>
             <div class="modal-body">
-                <p class="abstract-content" lang="en">Energy-Based Models (EBMs) allow for extremely flexible specifications of probability distributions. However, they do not provide a mechanism for obtaining exact samples from these distributions. Monte Carlo techniques can aid us in obtaining samples if some proposal distribution that we can easily sample from is available. For instance, rejection sampling can provide exact samples but is often difficult or impossible to apply due to the need to find a proposal distribution that upper-bounds the target distribution everywhere. Approximate Markov chain Monte Carlo sampling techniques like Metropolis-Hastings are usually easier to design, exploiting a local proposal distribution that performs local edits on an evolving sample. However, these techniques can be inefficient due to the local nature of the proposal distribution and do not provide an estimate of the quality of their samples. In this work, we propose a new approximate sampling technique, Quasi Rejection Sampling (QRS), that allows for a trade-off between sampling efficiency and sampling quality, while providing explicit convergence bounds and diagnostics. QRS capitalizes on the availability of high-quality global proposal distributions obtained from deep learning models. We demonstrate the effectiveness of QRS sampling for discrete EBMs over text for the tasks of controlled text generation with distributional constraints and paraphrase generation. We show that we can sample from such EBMs with arbitrary precision at the cost of sampling efficiency.
+                <p class="abstract-content" lang="en">Energy-based models (EBMs) allow flexible specifications of probability distributions. However, sampling from EBMs is non-trivial, usually requiring approximate techniques such as Markov chain Monte Carlo (MCMC). A major downside of MCMC sampling is that it is often impossible to compute the divergence of the sampling distribution from the target distribution: therefore, the quality of the samples cannot be guaranteed. Here, we introduce quasi-rejection sampling (QRS), a simple extension of rejection sampling that performs approximate sampling, but, crucially, does provide divergence diagnostics (in terms of f-divergences, such as KL divergence and total variation distance). We apply QRS to sampling from discrete EBMs over text for controlled generation. We show that we can sample from such EBMs with arbitrary precision in exchange for sampling efficiency and quantify the trade-off between the two by means of the aforementioned diagnostics.
 </p>
             </div>
         </div>
@@ -352,19 +355,13 @@
             <b>Cite</b><b class="close-modal">&times;</b>
             </div>
             <div class="modal-body">
-                <pre class="bibtex-content">@article{eikema-et-al-2021-sampling,
-  author    = {Bryan Eikema and
-               Germ{\&#39;{a}}n Kruszewski and
-               Hady Elsahar and
-               Marc Dymetman},
-  title     = {Sampling from Discrete Energy-Based Models with Quality/Efficiency
-               Trade-offs},
-  journal   = {CoRR},
-  volume    = {abs/2112.05702},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2112.05702},
-  eprinttype = {arXiv},
-  eprint    = {2112.05702}
+                <pre class="bibtex-content">@article{eikema-et-al-2022-qrs,
+title={},
+author={},
+journal={Transactions of Machine Learning Research},
+year={2022},
+url={https://openreview.net/forum?id=VW4IrC0n0M},
+note={}
 }
 </pre>
             </div>
@@ -386,8 +383,8 @@
 
     <div style="margin-bottom: 0.5cm;">
 
-    <b>Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation</b><br/>
-    Bryan Eikema and Wilker Aziz in <em>arXiv</em>, 2021
+    <b>Sampling-Based Approximations to Minimum Bayes Risk Decoding for Neural Machine Translation</b><br/>
+    Bryan Eikema and Wilker Aziz in <em>Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing</em>, 2022
     
     <br/>
 
@@ -396,6 +393,7 @@
     <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
     
     <form action="//arxiv.org/pdf/2108.04718.pdf" target="blank" style="display: inline;">
+            
             <button type="submit" class="pub-btn">pdf</button>
     </form>
     
@@ -410,11 +408,11 @@
     <div class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title"><b>Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation</b></span>
+                <span class="modal-title"><b>Sampling-Based Approximations to Minimum Bayes Risk Decoding for Neural Machine Translation</b></span>
                 <span class="close-modal"><b>&times;</b></span>
             </div>
             <div class="modal-body">
-                <p class="abstract-content" lang="en">In neural machine translation (NMT), we search for the mode of the model distribution to form predictions. The mode as well as other high probability translations found by beam search have been shown to often be inadequate in a number of ways. This prevents practitioners from improving translation quality through better search, as these idiosyncratic translations end up being selected by the decoding algorithm, a problem known as the beam search curse. Recently, a sampling-based approximation to minimum Bayes risk (MBR) decoding has been proposed as an alternative decision rule for NMT that would likely not suffer from the same problems. We analyse this approximation and establish that it has no equivalent to the beam search curse, i.e. better search always leads to better translations. We also design different approximations aimed at decoupling the cost of exploration from the cost of robust estimation of expected utility. This allows for exploration of much larger hypothesis spaces, which we show to be beneficial. We also show that it can be beneficial to make use of strategies like beam search and nucleus sampling to construct hypothesis spaces efficiently. We show on three language pairs (English into and from German, Romanian, and Nepali) that MBR can improve upon beam search with moderate computation.
+                <p class="abstract-content" lang="en">In NMT we search for the mode of the model distribution to form predictions. The mode and other high-probability translations found by beam search have been shown to often be inadequate in a number of ways. This prevents improving translation quality through better search, as these idiosyncratic translations end up selected by the decoding algorithm, a problem known as the beam search curse. Recently, an approximation to minimum Bayes risk (MBR) decoding has been proposed as an alternative decision rule that would likely not suffer from the same problems. We analyse this approximation and establish that it has no equivalent to the beam search curse. We then design approximations that decouple the cost of exploration from the cost of robust estimation of expected utility. This allows for much larger hypothesis spaces, which we show to be beneficial. We also show that mode-seeking strategies can aid in constructing compact sets of promising hypotheses and that MBR is effective in identifying good translations in them. We conduct experiments on three language pairs varying in amounts of resources available: English into and from German, Romanian, and Nepali.
 </p>
             </div>
         </div>
@@ -428,16 +426,15 @@
             <b>Cite</b><b class="close-modal">&times;</b>
             </div>
             <div class="modal-body">
-                <pre class="bibtex-content">@article{eikema-aziz-2021-sampling,
-  author    = {Bryan Eikema and
+                <pre class="bibtex-content">@inproceedings{eikema-aziz-2022-sampling,
+    author = {Bryan Eikema and
                Wilker Aziz},
-  title     = {Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation},
-  journal   = {CoRR},
-  volume    = {abs/2108.04718},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2108.04718},
-  eprinttype = {arXiv},
-  eprint    = {2108.04718}
+    title = {Sampling-Based Approximations to Minimum Bayes Risk Decoding for Neural Machine Translation},
+    booktitle = &#34;Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing&#34;,
+    month = dec,
+    year = &#34;2022&#34;,
+    address = &#34;Online and Abu Dhabi, United Arab Emirates&#34;,
+    publisher = &#34;Association for Computational Linguistics&#34;,
 }
 </pre>
             </div>
@@ -471,6 +468,7 @@
     <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
     
     <form action="//aclweb.org/anthology/2020.coling-main.398.pdf" target="blank" style="display: inline;">
+            
             <button type="submit" class="pub-btn">pdf</button>
     </form>
     
@@ -543,6 +541,7 @@
     <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
     
     <form action="//aclweb.org/anthology/W19-4315.pdf" target="blank" style="display: inline;">
+            
             <button type="submit" class="pub-btn">pdf</button>
     </form>
     
@@ -601,77 +600,6 @@
                 </span>
                 <span class="download-btn">
                     <a href="/files/bibtex/aevnmt.bib" download><i class="fa fa-download"></i> Download</a>
-                </span>
-                <i class="status-text"></i>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
-
-
-    <div style="margin-bottom: 0.5cm;">
-
-    <b>Master&#39;s Thesis: Auto-Encoding Variational Neural Machine Translation</b><br/>
-    Bryan Eikema in <em>UvA Scripties Online</em>, 2018
-    
-    <br/>
-
-    <div style="margin-top: 3px; margin-bottom: 10px;">
-    
-    <button type="button" class="pub-btn open-modal open-abstract">abstract</button>
-    
-    <form action="//esc.fnwi.uva.nl/thesis/centraal/files/f344704273.pdf" target="blank" style="display: inline;">
-            <button type="submit" class="pub-btn">pdf</button>
-    </form>
-    
-    
-    <button type="button" class="pub-btn open-modal open-cite">cite</button>
-    <br />
-    
-    </div>
-
-
-    
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="modal-title"><b>Master&#39;s Thesis: Auto-Encoding Variational Neural Machine Translation</b></span>
-                <span class="close-modal"><b>&times;</b></span>
-            </div>
-            <div class="modal-body">
-                <p class="abstract-content" lang="en">Translation data is often a byproduct of mixing different sources of data. This could be intentional such as by mixing data of different domains or including back-translated monolingual data, but often also is the result of how the bilingual dataset was constructed: a combination of different documents independently translated in different translation directions, by different translators, agencies, etc. Most neural machine translation models do not explicitly account for such variation in their probabilistic model. We attempt to model this by proposing a deep generative model that generates source and target sentences jointly from a shared sentence-level latent representation. The latent representation is designed to capture variations in the data distribution and allows the model to adjust its language and translation model accordingly. We show that such a model leads to superior performance over a strong conditional neural machine translation baseline in three settings: in-domain training where the training and test data are of the same domain, mixed-domain training where we train on a mix of domains and test on each domain separately, and in-domain training where we also include synthetic (noisy) back-translated data. We furthermore extend the model to be used in a semi-supervised setting in order to incorporate target monolingual data during training. Doing this we derive the commonly employed backtranslation heuristic in the form of a variational approximation to the posterior over the missing source sentence. This allows for training the back-translation network jointly with the rest of the model on a shared objective designed for source-to-target translation with minimal need of pre-processing. We find that the performance of this approach is not on par with the back-translation heuristic, but does lead to improvement over a model trained on bilingual data alone.
-</p>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-            <b>Cite</b><b class="close-modal">&times;</b>
-            </div>
-            <div class="modal-body">
-                <pre class="bibtex-content">@mastersthesis{eikema-msc-thesis-2018,
-    author = &#34;Bryan Eikema&#34;,
-    title = &#34;Auto-Encoding Variational Neural Machine Translation&#34;,
-    school = &#34;University of Amsterdam&#34;,
-    year = 2018,
-    address = &#34;Amsterdam, The Netherlands&#34;,
-    month = sep,
-    publisher = &#34;UvA Scripties Online&#34;,
-}
-</pre>
-            </div>
-            <div class="modal-footer">
-                <span class="download-btn">
-                    <a class="copy-btn"><i class="fa fa-copy"></i> Copy</a>
-                </span>
-                <span class="download-btn">
-                    <a href="/files/bibtex/msc-thesis.bib" download><i class="fa fa-download"></i> Download</a>
                 </span>
                 <i class="status-text"></i>
             </div>
